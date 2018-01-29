@@ -1,0 +1,130 @@
+@-webkit-keyframes slideInUp {
+    from {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+  
+.slideInUp {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+}
+
+@-webkit-keyframes slideInDown {
+    from {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.width {
+    max-width: 100%;
+    top: 5px;
+}
+
+.top-right{
+    position: fixed!important;
+    right: 10px;
+    z-index: 9999;
+    margin-top:15px;
+}
+.top-left{
+    position: fixed!important;
+    left: 10px;
+    z-index: 9999;
+    margin-top:15px;
+}
+.top-center{
+    position: fixed!important;
+    width: 50%;
+    z-index: 9999;
+    margin-top:15px;
+}
+.bottom-left{
+    position: fixed!important;
+    left: 10px;
+    bottom:0;
+    z-index: 9999;
+    margin-top:15px;
+}
+.bottom-right{
+    position: fixed!important;
+    right: 10px;
+    bottom:0;
+    z-index: 9999;
+    margin-top:15px;
+}
+.bottom-center{
+    position: fixed!important;
+    bottom:0;
+    width: 50%;
+    z-index: 9999;
+    margin-bottom:15px;
+}
+.alert-dangers {
+    background-color: #2ecc71;
+    border-color: #27ca6b;
+    color: #FFF;
+}
+p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0!important;
+}
+.icon {
+    vertical-align: top;
+    font-size : 16px;
+    padding-left: 16px;
+    opacity: 0.7;
+}
+.msgContainer {
+    display: "inline-block"
+}
