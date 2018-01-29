@@ -8,24 +8,26 @@ class App extends Component {
     constructor(props){
         super(props);
         this.state = {
-            isActive : false
+            isDismiss : false
         };
         this.click = this.click.bind(this);
     }
     click(props){
         this.setState({
-            isActive : !this.state.isActive
+            isDismiss : !this.state.isDismiss
         })
     }
     render(){
         return (
             <div className="container">
                 <Alert 
-                    isActive={this.state.isActive} 
-                    type="danger"
+                    isDismissible={this.state.isDismiss}
+                    type="success"
                     message="This is a success message"
                     title="Danger"
-                    possition="top-center"
+                    position="top-center"
+                    icon="material-icons"
+                    
                     />
                 <button onClick={this.click}>click</button>
             </div>
