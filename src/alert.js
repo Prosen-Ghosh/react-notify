@@ -13,6 +13,19 @@ class Alert extends Component{
         this.setState({
             isDismissCss : !nextProps.isDismissible ? 'hidden' : ''
         });
+        this.timer(this,nextProps.timeOut);
+    }
+    componentDidMount(){
+        this.timer(this,this.props.timeOut);
+    }
+    timer(that,time){
+        
+        setTimeout(function(){
+            console.log("time")
+            that.setState({
+                isDismissCss : 'hidden'
+            });
+        },time);
     }
     handleDismiss(){
         this.setState({
